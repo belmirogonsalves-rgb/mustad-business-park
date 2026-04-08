@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew --version)",
+      "Bash(php --version)",
+      "Bash(ruby --version)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4000/)",
+      "Bash(curl -s -o /dev/null -w \" logo:%{http_code}\" http://localhost:4000/assets/images/logo.avif)",
+      "Bash(curl -s -o /dev/null -w \" mbp:%{http_code}\" \"http://localhost:4000/assets/images/mustad-business-park.avif\")",
+      "Bash(curl -s -o /dev/null -w \" hunnd:%{http_code}\" \"http://localhost:4000/assets/images/Hunndalen.avif\")",
+      "Bash(curl -s -o /dev/null -w \" foundry:%{http_code}\" \"http://localhost:4000/assets/images/the-foundry.avif\")",
+      "Bash(grep -o '.\\\\{0,300\\\\}Tietoevry.\\\\{0,300\\\\}' /tmp/leietakere.html)",
+      "Bash(perl -e ':*)"
+    ]
+  }
+}

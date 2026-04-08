@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustad Business Park — Office, Warehouse & Industrial Space in Gjøvik</title>
+  <meta name="description" content="Available office, warehouse and light industrial space in Gjøvik, Innlandet. Mustad Næringspark — 452,000 ft², 60+ tenants, 3 min from E6. Book a viewing today." />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org LocalBusiness structured data for Google Maps visibility -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mustad Business Park",
+    "url": "https://mustadpark.no",
+    "telephone": "+4761173700",
+    "email": "post@mustadpark.no",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Raufosstveien 40",
+      "addressLocality": "Gjøvik",
+      "postalCode": "2821",
+      "addressCountry": "NO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 60.7957,
+      "longitude": 10.6918
+    },
+    "description": "Mustad Business Park tilbyr kontorlokaler, lager og industrilokaler i Gjøvik, Innlandet. 452 000 kvm, 60+ leietakere, 3 min fra E6.",
+    "openingHours": "Mo-Fr 08:00-16:00"
+  }
+  </script>
+</head>
+<body class="page-enter">
+
+  <!-- ============================================================
+       1. NAVIGATION — sticky dark bar with logo, links, CTA
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav__logo" aria-label="Mustad Business Park home">
+        <img src="assets/images/logo.avif" alt="Mustad Business Park" class="nav__logo-img" width="120" height="36" />
+      </a>
+
+      <!-- Centre links -->
+      <ul class="nav__links" role="list">
+        <li><a href="#units" class="nav__link">Available spaces</a></li>
+        <li><a href="#properties" class="nav__link">Properties</a></li>
+        <li><a href="#life" class="nav__link">Life at Mustad</a></li>
+        <li><a href="#contact" class="nav__link">Location</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <button class="btn btn--steel nav__cta js-open-modal" data-unit="">Book a viewing &rarr;</button>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#units" class="nav__link">Available spaces</a></li>
+        <li><a href="#properties" class="nav__link">Properties</a></li>
+        <li><a href="#life" class="nav__link">Life at Mustad</a></li>
+        <li><a href="#contact" class="nav__link">Location</a></li>
+      </ul>
+      <button class="btn btn--steel js-open-modal" data-unit="">Book a viewing &rarr;</button>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       2. HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__inner">
+
+      <!-- Left: Content -->
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow">
+          <span class="eyebrow__line"></span>
+          Gjøvik, Norway &middot; Est. 1832 · 70+ businesses
+        </p>
+
+        <h1 class="hero__h1">
+          Space for businesses<br>that want to <span class="hero__accent">grow</span>
+        </h1>
+
+        <p class="hero__sub">
+          More than a landlord — a business ecosystem. 36,000 m² of flexible space in Innlandet, shared services, and a community of 70+ companies across tech, industrial, creative and public sectors.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#units" class="btn btn--steel hero__btn-primary">View available spaces</a>
+          <button class="btn btn--ghost js-open-floorplan">Download floor plan overview</button>
+        </div>
+
+        <!-- Property overview card -->
+        <div class="hero__sidebar-card hero__sidebar-card--glow" style="margin-top: 24px;">
+          <p class="eyebrow" style="color: rgba(156,213,255,0.55); margin-bottom: 10px;">Available now</p>
+          <p class="hero__unit-name">Office Suite A-201</p>
+          <p class="hero__unit-meta">1,200 ft² &nbsp;&middot;&nbsp; From NOK 145/ft²/yr</p>
+          <div class="hero__unit-tags">
+            <span class="tag">Ready to move in</span>
+            <span class="tag">Natural light</span>
+            <span class="tag">Fast fibre</span>
+          </div>
+          <button class="btn btn--steel hero__unit-cta js-open-modal" data-unit="Office Suite A-201">Book a viewing</button>
+        </div>
+
+        <!-- KPI strip -->
+        <div class="hero__kpis">
+          <div class="hero__kpi">
+            <span class="hero__kpi-value">452,000</span>
+            <span class="hero__kpi-label">ft² total space</span>
+          </div>
+          <div class="hero__kpi-divider" aria-hidden="true"></div>
+          <div class="hero__kpi">
+            <span class="hero__kpi-value">70+</span>
+            <span class="hero__kpi-label">active tenants</span>
+          </div>
+          <div class="hero__kpi-divider" aria-hidden="true"></div>
+          <div class="hero__kpi">
+            <span class="hero__kpi-value">3 min</span>
+            <span class="hero__kpi-label">from E6</span>
+          </div>
+          <div class="hero__kpi-divider" aria-hidden="true"></div>
+          <div class="hero__kpi">
+            <span class="hero__kpi-value">150 yrs</span>
+            <span class="hero__kpi-label">industrial heritage</span>
+          </div>
+        </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">Scroll</span>
+      </div>
+      </div>
+
+      <!-- Right: Sidebar cards -->
+      <div class="hero__sidebar">
+
+        <!-- Occupancy card -->
+        <div class="hero__sidebar-card">
+          <div class="hero__occ-header">
+            <span class="hero__occ-label eyebrow">Occupancy rate</span>
+            <span class="hero__occ-badge">
+              <span class="hero__pulse" aria-hidden="true"></span>
+              occupied
+            </span>
+          </div>
+          <div class="hero__occ-value">87%</div>
+          <div class="hero__occ-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+            <div class="hero__occ-fill"></div>
+          </div>
+          <p class="hero__occ-note">Only <strong>limited space</strong> remains — 70+ businesses already call this home.</p>
+        </div>
+
+        <!-- Next available unit card -->
+        <div class="hero__sidebar-card hero__sidebar-card--glow">
+          <p class="eyebrow" style="color: rgba(156,213,255,0.55); margin-bottom: 10px;">Available now</p>
+          <p class="hero__unit-name">Office Suite A-201</p>
+          <p class="hero__unit-meta">1,200 ft² &nbsp;&middot;&nbsp; From NOK 145/ft²/yr</p>
+          <div class="hero__unit-tags">
+            <span class="tag">Ready to move in</span>
+            <span class="tag">Natural light</span>
+            <span class="tag">Fast fibre</span>
+          </div>
+          <button class="btn btn--steel hero__unit-cta js-open-modal" data-unit="Office Suite A-201">Book a viewing</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       3. TENANT STRIP — social proof
+       ============================================================ -->
+  <section class="tenants" aria-label="Current tenants">
+    <div class="tenants__label-row">
+      <span class="tenants__label">Among our tenants:</span>
+      <span class="tenants__more">+ 60 other businesses</span>
+    </div>
+    <div class="tenants__ribbon-wrap">
+      <div class="tenants__ribbon" aria-hidden="false">
+        <!-- Set 1 -->
+        <ul class="tenants__logos" role="list">
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_58_94d8f7_37e00f222e6f4cd98a9ad880345d3135~mv2.png" alt="Innlandet Entreprenørsupport" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_59_94d8f7_27918a286181458ea0dcd80154b8c9ea~mv2.png" alt="Gjøvikregionen" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_62_94d8f7_4aa0ad9db92c479da44b4c4e84f457b3~mv2.png" alt="Svanen Service" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_67_94d8f7_70e21904c45b4612a68206f950422c46~mv2.png" alt="EG" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_68_94d8f7_d642157adcfd4d34a8aaa061a2b1cc79~mv2.png" alt="Entec Brimer" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_82_94d8f7_c4916c3d25a54990a6d631ee2a0b8fe3~mv2.png" alt="Kontur arkitekter" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_83_37f471_2e89f48e63ef4a47a34b1b1c513a1fe9~mv2.png" alt="Emera Rekruttering" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_89_94d8f7_feb282688ac548818ebe3a9b6081de86~mv2.png" alt="Protan Entreprenør" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_92_37f471_3e21c50edf1447fea7566a5c6ada4e1e~mv2.jpg" alt="Tenant logo" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_94_37f471_83817ccaba0f45b9a51033973678604d~mv2.jpg" alt="Sykehuspartner" loading="lazy" /></li>
+        </ul>
+        <!-- Set 2 — duplicate for seamless loop -->
+        <ul class="tenants__logos" role="list" aria-hidden="true">
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_58_94d8f7_37e00f222e6f4cd98a9ad880345d3135~mv2.png" alt="Innlandet Entreprenørsupport" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_59_94d8f7_27918a286181458ea0dcd80154b8c9ea~mv2.png" alt="Gjøvikregionen" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_62_94d8f7_4aa0ad9db92c479da44b4c4e84f457b3~mv2.png" alt="Svanen Service" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_67_94d8f7_70e21904c45b4612a68206f950422c46~mv2.png" alt="EG" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_68_94d8f7_d642157adcfd4d34a8aaa061a2b1cc79~mv2.png" alt="Entec Brimer" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_82_94d8f7_c4916c3d25a54990a6d631ee2a0b8fe3~mv2.png" alt="Kontur arkitekter" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_83_37f471_2e89f48e63ef4a47a34b1b1c513a1fe9~mv2.png" alt="Emera Rekruttering" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_89_94d8f7_feb282688ac548818ebe3a9b6081de86~mv2.png" alt="Protan Entreprenør" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_92_37f471_3e21c50edf1447fea7566a5c6ada4e1e~mv2.jpg" alt="Tenant logo" loading="lazy" /></li>
+          <li class="tenants__logo"><img src="Mustad Næringspark _ Mustad Næringspark/imgi_94_37f471_83817ccaba0f45b9a51033973678604d~mv2.jpg" alt="Sykehuspartner" loading="lazy" /></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       3b. OUR LOCATIONS — 4 property cards (first scroll section)
+       ============================================================ -->
+  <section class="locations" id="properties">
+    <div class="locations__inner">
+
+      <div class="locations__header" data-reveal>
+        <p class="eyebrow" style="color: var(--steel)">Our locations</p>
+        <h2 class="section-h2">Four distinct properties</h2>
+        <p class="section-sub">Each site has its own character and range of units. Click to enquire about a specific property.</p>
+      </div>
+
+      <div class="locations__grid">
+
+        <!-- Location 1: Mustad Business Park -->
+        <a href="mustad-business-park.html" class="loc-card" data-reveal data-delay="0" aria-label="Explore Mustad Business Park">
+          <div class="loc-card__image-wrap">
+            <img
+              src="assets/images/Mustad Business Park.avif"
+              alt="Mustad Business Park — flagship brick complex in Gjøvik"
+              class="loc-card__image"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+            <div class="loc-card__overlay">
+              <h3 class="loc-card__title">Mustad Business Park</h3>
+              <p class="loc-card__meta">Gjøvik city centre &middot; 2 min</p>
+              <span class="loc-card__cta">Explore &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Location 2: Bright House -->
+        <a href="bright-house.html" class="loc-card" data-reveal data-delay="80" aria-label="Explore Bright House">
+          <div class="loc-card__image-wrap">
+            <img
+              src="assets/images/Bright House.avif"
+              alt="Bright House — modern commercial property"
+              class="loc-card__image"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+            <div class="loc-card__overlay">
+              <h3 class="loc-card__title">Bright House</h3>
+              <p class="loc-card__meta">Modern office &middot; Flexible</p>
+              <span class="loc-card__cta">Explore &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Location 3: Requested Rental Area -->
+        <a href="requested-rental-area.html" class="loc-card" data-reveal data-delay="160" aria-label="Explore Requested Rental Area">
+          <div class="loc-card__image-wrap">
+            <img
+              src="assets/images/Requested Rental Area.avif"
+              alt="Requested Rental Area — available rental space"
+              class="loc-card__image"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+            <div class="loc-card__overlay">
+              <h3 class="loc-card__title">Requested Rental Area</h3>
+              <p class="loc-card__meta">Custom space &middot; Build to suit</p>
+              <span class="loc-card__cta">Explore &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Location 4: The Foundry -->
+        <a href="the-foundry.html" class="loc-card" data-reveal data-delay="240" aria-label="Explore The Foundry">
+          <div class="loc-card__image-wrap">
+            <img
+              src="assets/images/The foundry location.avif"
+              alt="The Foundry — riverside creative and industrial complex"
+              class="loc-card__image"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+            <div class="loc-card__overlay">
+              <h3 class="loc-card__title">The Foundry</h3>
+              <p class="loc-card__meta">Gjøvik station &middot; 5 min walk</p>
+              <span class="loc-card__cta">Explore &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       4. AVAILABLE SPACES — filterable unit cards
+       ============================================================ -->
+  <section class="units" id="units">
+    <div class="units__inner">
+
+      <div class="units__header" data-reveal>
+        <p class="eyebrow" style="color: var(--steel)">Available now</p>
+        <h2 class="section-h2">Find your space</h2>
+        <p class="section-sub">Transparent pricing, real availability. Filter by type and book a viewing directly.</p>
+      </div>
+
+      <!-- Filter chips — by building -->
+      <div class="units__filters" data-reveal role="group" aria-label="Filter spaces by building">
+        <button class="chip chip--building chip--active" data-building="all">All buildings</button>
+        <button class="chip chip--building" data-building="mustad">Mustad Business Park</button>
+        <button class="chip chip--building" data-building="brighthouse">Bright House</button>
+        <button class="chip chip--building" data-building="foundry">The Foundry</button>
+      </div>
+
+      <!-- Unit cards grid -->
+      <div class="units__grid" id="unitsGrid">
+
+        <!-- Unit 1: Office — 600 sqm -->
+        <article class="unit-card" data-reveal data-delay="0" data-type="office" data-building="mustad" data-desc="600 sqm modern office with a well-thought-out floor plan. Flexible layout adaptable to your business — rooms and zones configured to suit. Own kitchen, shared canteens, bookable meeting rooms, gym membership, and free parking included. Available July 2026." data-features="600 sqm|Flexible layout|Kitchen|Canteens|Meeting rooms|Gym|Free parking|Available Jul 2026" data-images="Available Spaces/Comfortable and functional office space/imgi_11_37f471_0f7319805bca4139b7266a2c767bd945~mv2.webp|Available Spaces/Comfortable and functional office space/imgi_12_37f471_df2c83f26a814264aa45f92f1f2d2b5e~mv2.webp|Available Spaces/Comfortable and functional office space/imgi_13_37f471_b0e950d9d5024e9c8df1df22b48eea66~mv2.webp|Available Spaces/Comfortable and functional office space/imgi_14_37f471_3a88acd75df84dfdb55fbd4d20394b4f~mv2.webp|Available Spaces/Comfortable and functional office space/imgi_15_37f471_43bebbf706614a5a9af4b35c555cf16b~mv2.webp|Available Spaces/Comfortable and functional office space/imgi_16_37f471_9eb4be329e9e4ea6bfe0959cd36e17b0~mv2.webp">
+          <div class="unit-card__image">
+            <img src="assets/images/1.avif" alt="Comfortable and functional office space" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">600 sqm</span>
+              <span class="unit-card__type">Office</span>
+            </div>
+            <p class="unit-card__name">Comfortable and functional office space</p>
+            <p class="unit-card__price">Jan 28</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">Mustad Business Park</span>
+              <span class="tag tag--sm">Modern</span>
+              <span class="tag tag--sm">Adaptable layout</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+        <!-- Unit 2: Office — ~130 sqm -->
+        <article class="unit-card" data-reveal data-delay="60" data-type="office" data-building="brighthouse" data-desc="130 sqm in Bright House with 4 cell offices, a large meeting room, and own kitchen. Available spring 2026. Shared canteens, gym membership, free parking, external meeting rooms, and social common areas included." data-features="130 sqm|4 cell offices|Meeting room|Kitchen|Free parking|Gym|Available spring 2026" data-images="Available Spaces/130sqm/imgi_2_37f471_2be83f08148e40429b5231d1c891352b~mv2.jpg|Available Spaces/130sqm/imgi_3_37f471_cd9b6b2e596d4bfdbfb112a6cb9b4242~mv2.jpg|Available Spaces/130sqm/imgi_4_37f471_7d4fa905d65646499555932f8d3aa87a~mv2.jpg|Available Spaces/130sqm/imgi_5_37f471_91ec76e5a1ff4ba58cd937d0823a8d2b~mv2.jpg">
+          <div class="unit-card__image">
+            <img src="assets/images/2.avif" alt="Bright and beautiful office spaces" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">~130 sqm</span>
+              <span class="unit-card__type">Office</span>
+            </div>
+            <p class="unit-card__name">Bright and beautiful office spaces</p>
+            <p class="unit-card__price">Jan 27</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">Bright House</span>
+              <span class="tag tag--sm">4 offices</span>
+              <span class="tag tag--sm">Meeting room</span>
+              <span class="tag tag--sm">Kitchen access</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+        <!-- Unit 3: Bright House — 316 sqm -->
+        <article class="unit-card" data-reveal data-delay="120" data-type="office" data-building="brighthouse" data-desc="316 sqm on Floor U in Bright House with 2 cell offices, own kitchen, and a private patio. Goods delivery via gate access. Adaptable layout for new tenants. Shared canteens, gym, free parking, external meeting rooms, and nearby warehouse rental available." data-features="316 sqm|2 cell offices|Kitchen|Private patio|Gate access|Free parking|Gym|Adaptable layout" data-images="Available Spaces/316 sqm/imgi_2_94d8f7_3dcd20a9b1274b598b064e1ee981d9b8~mv2.jpg|Available Spaces/316 sqm/imgi_19_94d8f7_988313bdec21410487b76a79e3c016c5~mv2.webp|Available Spaces/316 sqm/imgi_20_94d8f7_1a5e91b845b048458dd9df907c7be055~mv2.webp|Available Spaces/316 sqm/imgi_25_94d8f7_4906d9c6eb0e4079ad32569cce86a5fd~mv2.webp|Available Spaces/316 sqm/imgi_28_94d8f7_8f74392d72a143dd874903c3469681a5~mv2.webp|Available Spaces/316 sqm/imgi_30_94d8f7_da2c59f6e6404f198bbaafff572c2528~mv2.webp|Available Spaces/316 sqm/imgi_31_94d8f7_a7c4c6bdd8d3483fb36b07b8a81cb002~mv2.webp">
+          <div class="unit-card__image">
+            <img src="assets/images/3.avif" alt="Bright House, vacant space" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">316 sqm</span>
+              <span class="unit-card__type">Office</span>
+            </div>
+            <p class="unit-card__name">Bright House, vacant space</p>
+            <p class="unit-card__price">Jul 2, 2025</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">Bright House</span>
+              <span class="tag tag--sm">Flexible</span>
+              <span class="tag tag--sm">Multi-use</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+        <!-- Unit 4: The Foundry — ~1800 sqm -->
+        <article class="unit-card" data-reveal data-delay="180" data-type="industry" data-building="foundry" data-desc="1,800 sqm across two floors at Gjøvik Gård, with elevator and district heating. Layout adapted to new tenants. On-site operations team, janitorial and cleaning services included. Central location with good parking and public transport access." data-features="~1,800 sqm|Two floors|Elevator|District heating|Adaptable layout|Parking|Cleaning included" data-images="Available Spaces/1800/imgi_2_94d8f7_4073cb5caead4f35be22bd69aef241ce~mv2.jpg|Available Spaces/1800/imgi_18_94d8f7_2e0255a91b0d4603bcf07790f6d767b7~mv2.jpg|Available Spaces/1800/imgi_20_94d8f7_7db24ea77f84461e88ebe8dbe1a79f47~mv2.jpg|Available Spaces/1800/imgi_21_94d8f7_77d3332edc2b4611ba60b30fe9a95858~mv2.jpg|Available Spaces/1800/imgi_22_94d8f7_247af052418045c39558e9a897c5a606~mv2.jpg|Available Spaces/1800/imgi_23_94d8f7_e023e9cce4af49f5809113f43be0f8e7~mv2.jpg|Available Spaces/1800/imgi_24_94d8f7_ba23a3e2cf994ff9bcb23da3262041df~mv2.jpg">
+          <div class="unit-card__image">
+            <img src="assets/images/4.avif" alt="The foundry, vacant premises in the center of Gjøvik" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">~1,800 sqm</span>
+              <span class="unit-card__type">Light industry</span>
+            </div>
+            <p class="unit-card__name">The foundry, vacant premises in the center of Gjøvik</p>
+            <p class="unit-card__price">May 15, 2025</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">The Foundry</span>
+              <span class="tag tag--sm">Over two floors</span>
+              <span class="tag tag--sm">Elevator</span>
+              <span class="tag tag--sm">District heating</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+        <!-- Unit 5: Bright House office — 239 sqm + 37 sqm -->
+        <article class="unit-card" data-reveal data-delay="240" data-type="office" data-building="brighthouse" data-desc="239 sqm office plus 37 sqm common area in Bright House. Bright, modern premises with flexible room layout. Own kitchen, shared canteens, bookable meeting rooms, gym membership, and free parking included." data-features="239 + 37 sqm|Flexible layout|Kitchen|Canteens|Meeting rooms|Gym|Free parking|Bright House" data-images="Available Spaces/239sqm/imgi_2_94d8f7_6807aec25ab948ccaa68b59d39128ecf~mv2.jpg|Available Spaces/239sqm/imgi_22_94d8f7_6cbf659d6fdb4d03af8c30041cb3d688~mv2.jpg|Available Spaces/239sqm/imgi_23_94d8f7_72ee6e832e564acd8ddc9db8740eda1a~mv2.jpg|Available Spaces/239sqm/imgi_25_94d8f7_c6096155e00b4c609408937948bc6cb8~mv2.jpg|Available Spaces/239sqm/imgi_26_94d8f7_450633bbaf3e464c915e729a92003e49~mv2.jpg|Available Spaces/239sqm/imgi_27_94d8f7_a181d9c6cc8045e3b984bb86f406d006~mv2.jpg|Available Spaces/239sqm/imgi_28_37f471_0aa9bd77f9c54a03b191f2da65109347~mv2.jpg">
+          <div class="unit-card__image">
+            <img src="assets/images/5.avif" alt="Bright House, vacant office space" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">239 + 37 sqm</span>
+              <span class="unit-card__type">Office</span>
+            </div>
+            <p class="unit-card__name">Bright House, vacant office space</p>
+            <p class="unit-card__price">May 13, 2025</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">Bright House</span>
+              <span class="tag tag--sm">Office</span>
+              <span class="tag tag--sm">Common area</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+        <!-- Unit 6: Bright House cell office -->
+        <article class="unit-card" data-reveal data-delay="300" data-type="office" data-building="brighthouse" data-desc="Own lockable office in Bright House with 24/7 access. Includes lockable cupboard, unlimited meeting room bookings, free parking, and access to two canteens and fitness center." data-features="Lockable office|24/7 access|Lockable cupboard|Meeting rooms|Free parking|Canteens|Gym" data-images="Available Spaces/Cell office/imgi_2_94d8f7_fc12646ed211454cb7a1a57fb17e34e2~mv2.jpg">
+          <div class="unit-card__image">
+            <img src="assets/images/6.avif" alt="Bright House, vacant cell office" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">Cell office</span>
+              <span class="unit-card__type">Office</span>
+            </div>
+            <p class="unit-card__name">Bright House, vacant cell office</p>
+            <p class="unit-card__price">May 11, 2025</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">Bright House</span>
+              <span class="tag tag--sm">Lockable</span>
+              <span class="tag tag--sm">24/7 access</span>
+              <span class="tag tag--sm">Meeting room</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+        <!-- Unit 7: Warehouse — Mustad Business Park -->
+        <article class="unit-card" data-reveal data-delay="360" data-type="warehouse" data-building="mustad" data-desc="20–600 sqm warm warehouse with natural daylight via large windows. Driveway gate and ramp for easy goods transport. Adaptable to tenant needs, central location near main roads and city centre. Ready to move in — ideal for logistics, e-commerce, crafts, or production." data-features="20–600 sqm|Warm warehouse|Daylight|Gate &amp; ramp|Adaptable|Free parking|Central location|Move-in ready" data-images="Available Spaces/Warehouse/imgi_2_94d8f7_16494e317c804b3883934e793c54dd24~mv2.jpg|Available Spaces/Warehouse/imgi_16_94d8f7_6608ba7d107e45cebaecbbf8e4c2890f~mv2.jpg|Available Spaces/Warehouse/imgi_18_94d8f7_7dbacc12d7ce4a9380d1a6c25c5c42e2~mv2.jpg|Available Spaces/Warehouse/imgi_19_94d8f7_b685692b98714ce88d5eec4a4e84bc50~mv2.jpg|Available Spaces/Warehouse/imgi_20_94d8f7_20a26676972d4e1e95c77c5105ff4e5d~mv2.jpg|Available Spaces/Warehouse/imgi_21_94d8f7_b9f8a586700c4850bd4909d763db4486~mv2.jpg">
+          <div class="unit-card__image">
+            <img src="assets/images/7.avif" alt="Warehouse space centrally located in Mustad Business Park" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">Warehouse</span>
+              <span class="unit-card__type">Warehouse</span>
+            </div>
+            <p class="unit-card__name">Warehouse space centrally located in Mustad Business Park</p>
+            <p class="unit-card__price">May 9, 2025</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">Mustad Business Park</span>
+              <span class="tag tag--sm">Immediately available</span>
+              <span class="tag tag--sm">Central location</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+        <!-- Unit 8: Warehouse — Åmot, Hunndalen -->
+        <article class="unit-card" data-reveal data-delay="420" data-type="warehouse" data-building="mustad" data-desc="155 sqm warm storage with gate access and windows. Central location near public transport and main roads, with free parking. Adaptable to tenant needs — ideal for businesses wanting efficient, central, and functional storage." data-features="155 sqm|Warm storage|Gate access|Windows|Free parking|Central location|Adaptable" data-images="Available Spaces/155sqm warehouse/imgi_2_94d8f7_3b00b1351c63401fab0990a26b2ad54c~mv2.jpg|Available Spaces/155sqm warehouse/imgi_14_94d8f7_eca360fcee03459f91194a79084e1a21~mv2.jpg|Available Spaces/155sqm warehouse/imgi_15_94d8f7_f7422c0684bf41518e351a8df4111ae3~mv2.jpg|Available Spaces/155sqm warehouse/imgi_17_94d8f7_3b00b1351c63401fab0990a26b2ad54c~mv2.jpg|Available Spaces/155sqm warehouse/imgi_18_94d8f7_b3bcddce66664d3b912f15c10a923d0a~mv2.jpg">
+          <div class="unit-card__image">
+            <img src="assets/images/8.avif" alt="Warehouse for rent in Åmot, Hunndalen" loading="lazy" />
+            <span class="unit-card__badge unit-card__badge--available">Available now</span>
+          </div>
+          <div class="unit-card__body">
+            <div class="unit-card__row">
+              <span class="unit-card__size">155 sqm</span>
+              <span class="unit-card__type">Warehouse</span>
+            </div>
+            <p class="unit-card__name">Warehouse for rent in Åmot, Hunndalen</p>
+            <p class="unit-card__price">May 8, 2025</p>
+            <div class="unit-card__tags">
+              <span class="tag tag--sm tag--building">Mustad Business Park</span>
+              <span class="tag tag--sm">Heated</span>
+              <span class="tag tag--sm">155 sqm</span>
+            </div>
+            <button class="btn btn--navy unit-card__cta js-open-detail">View details</button>
+          </div>
+        </article>
+
+      </div><!-- /units__grid -->
+    </div>
+  </section>
+
+
+
+  <!-- ============================================================
+       6b. LIFE AT MUSTAD — offerings & atmosphere teaser
+       ============================================================ -->
+  <section class="life" id="life">
+    <div class="life__inner">
+      <div class="life__gallery">
+        <div class="life__img life__img--tall">
+          <img src="Mustad Næringspark _ Mustad Næringspark/imgi_31__DSC0400.jpg" alt="Outdoor terrace dining among the birch trees" loading="lazy" />
+        </div>
+        <div class="life__img">
+          <img src="Mustad Næringspark _ Mustad Næringspark/imgi_33__DSC8093.jpg" alt="Meeting room with interactive screen" loading="lazy" />
+        </div>
+        <div class="life__img">
+          <img src="Mustad Næringspark _ Mustad Næringspark/imgi_34_DSC_1950.jpg" alt="Bright Cafe on campus" loading="lazy" />
+        </div>
+      </div>
+      <div class="life__content">
+        <p class="eyebrow" style="color: var(--steel)">Life at Mustad</p>
+        <h2 class="section-h2">More than just a place to work</h2>
+        <p class="life__desc">A birch-tree terrace for summer lunches. A cafe that knows your order. A gym downstairs. Meeting rooms you can book in seconds. Events that turn neighbours into collaborators. This is what a real business community feels like.</p>
+        <div class="life__highlights">
+          <div class="life__highlight">
+            <strong>Bright Caf&eacute;</strong>
+            <span>On-site canteen &amp; coffee</span>
+          </div>
+          <div class="life__highlight">
+            <strong>Gym &amp; wellness</strong>
+            <span>SIT fitness for all tenants</span>
+          </div>
+          <div class="life__highlight">
+            <strong>Outdoor spaces</strong>
+            <span>Birch garden &amp; courtyard</span>
+          </div>
+          <div class="life__highlight">
+            <strong>Meeting rooms</strong>
+            <span>AV-equipped, bookable</span>
+          </div>
+        </div>
+        <a href="life-at-mustad.html" class="btn btn--navy life__cta">Know more &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       7. CONTACT SECTION — dark bg, photo strip, form
+       ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+
+      <!-- Photo strip -->
+      <div class="contact__photos">
+
+        <div class="contact__photo-item">
+          <!-- IMAGE: active community.jpg — team meeting overhead view, round table -->
+          <img
+            src="assets/images/active community.jpg"
+            alt="Active tenant community meeting at Mustad Business Park"
+            class="contact__photo"
+            loading="lazy"
+            width="400"
+            height="220"
+          />
+          <p class="contact__photo-caption">
+            <strong>Active community</strong><br>70+ businesses collaborating
+          </p>
+        </div>
+
+        <div class="contact__photo-item">
+          <!-- IMAGE: flexible spaces.jpg — floor plan review meeting, screen and 4 people -->
+          <img
+            src="assets/images/flexible spaces.jpg"
+            alt="Floor plan review meeting at Mustad Business Park"
+            class="contact__photo"
+            loading="lazy"
+            width="400"
+            height="220"
+          />
+          <p class="contact__photo-caption">
+            <strong>Flexible spaces</strong><br>We adapt to your needs
+          </p>
+        </div>
+
+        <div class="contact__photo-item">
+          <!-- IMAGE: tenant community.jpg — long table meeting, 7 people, blue glass wall -->
+          <img
+            src="assets/images/tenant community.jpg"
+            alt="Conference room meeting with tenants at Mustad Business Park"
+            class="contact__photo"
+            loading="lazy"
+            width="400"
+            height="220"
+          />
+          <p class="contact__photo-caption">
+            <strong>Tenant community</strong><br>Join 70+ businesses
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom: details + form -->
+      <div class="contact__bottom">
+
+        <div class="contact__details" data-reveal>
+          <p class="eyebrow" style="color: rgba(156,213,255,0.55); margin-bottom: 14px;">Get in touch</p>
+          <h2 class="contact__h2">Join a business ecosystem that works for you.</h2>
+          <p class="contact__desc">Tell us what you need and we'll find the right space for your business. Whether you're a 2-person startup or a 200-person operation, we'll get back to you within 4 hours.</p>
+
+          <ul class="contact__info" role="list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5A5.5 5.5 0 0 0 2.5 7c0 3.6 5.5 8 5.5 8s5.5-4.4 5.5-8A5.5 5.5 0 0 0 8 1.5zm0 7.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="rgba(156,213,255,0.6)"/></svg>
+              Raufosstveien 40, 2821 Gjøvik
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 10.5c-.8-.1-1.6-.3-2.3-.6-.3-.1-.6-.1-.8.1l-1 1c-1.5-.8-2.8-2-3.6-3.5l1-1c.2-.2.2-.5.1-.8C6 5 5.8 4.3 5.7 3.5 5.6 3 5.2 2.7 4.7 2.7H3c-.6 0-1 .5-1 1 0 5.8 4.7 10.5 10.5 10.5.5 0 1-.4 1-1v-1.7c0-.5-.3-.9-.8-1z" fill="rgba(156,213,255,0.6)"/></svg>
+              <a href="tel:+4761173700">+47 61 17 37 00</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="3" width="14" height="10" rx="2" stroke="rgba(156,213,255,0.6)" stroke-width="1.5"/><path d="M1 5l7 5 7-5" stroke="rgba(156,213,255,0.6)" stroke-width="1.5"/></svg>
+              <a href="mailto:post@mustadpark.no">post@mustadpark.no</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Inline contact form — lives directly on the dark section, no white box -->
+        <form class="contact__form" data-reveal id="contactForm" action="#" method="post" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="cf-name">Name</label>
+              <input class="form__input" type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="cf-company">Company</label>
+              <input class="form__input" type="text" id="cf-company" name="company" placeholder="Your company" required autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="cf-contact">Email or phone</label>
+            <input class="form__input" type="text" id="cf-contact" name="contact" placeholder="you@company.com or +47 …" required />
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="cf-type">Type of space</label>
+              <select class="form__input form__select" id="cf-type" name="space_type">
+                <option value="">Select…</option>
+                <option value="office">Office</option>
+                <option value="warehouse">Warehouse</option>
+                <option value="industry">Light industry</option>
+                <option value="mixed">Mixed use</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="cf-size">Approx. size</label>
+              <input class="form__input" type="text" id="cf-size" name="size" placeholder="e.g. 500–1,000 ft²" />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="cf-movein">Target move-in date</label>
+            <input class="form__input" type="text" id="cf-movein" name="move_in" placeholder="e.g. Q3 2025 or as soon as possible" />
+          </div>
+
+          <!-- GDPR consent — required before launch -->
+          <div class="form__group form__group--checkbox">
+            <label class="form__checkbox-label">
+              <input type="checkbox" name="consent" required />
+              <span>I agree to Mustad Business Park processing my information in accordance with their <a href="/privacy-policy" class="form__link">privacy policy</a>.</span>
+            </label>
+          </div>
+
+          <button class="btn btn--steel form__submit" type="submit">Send enquiry</button>
+          <p class="form__sla">Average response time: 4 hours during business hours</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       8. FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#" class="nav__logo footer__logo" aria-label="Mustad Business Park">
+        <img src="assets/images/logo.avif" alt="Mustad Business Park" class="nav__logo-img nav__logo-img--footer" width="100" height="30" />
+      </a>
+      <p class="footer__copy">&copy; 2025 Mustad Næringspark AS &nbsp;&middot;&nbsp; Raufosstveien 40, 2821 Gjøvik &nbsp;&middot;&nbsp; <a href="mailto:post@mustadpark.no">post@mustadpark.no</a></p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="/privacy-policy">Privacy policy</a>
+        <a href="#units">Available spaces</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       DETAIL MODAL — property details popup
+       ============================================================ -->
+  <div class="modal-overlay" id="detailOverlay" role="dialog" aria-modal="true" aria-labelledby="detailTitle" hidden>
+    <div class="modal modal--detail">
+      <button class="modal__close" id="detailClose" aria-label="Close">&times;</button>
+
+      <div class="detail-modal__image-wrap">
+        <img src="" alt="" class="detail-modal__image" id="detailImage" />
+        <span class="detail-modal__badge" id="detailBadge"></span>
+        <button class="detail-modal__expand" id="detailExpand" aria-label="Expand image">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 1l5 5M10 1h5v5M6 15l-5-5M6 15H1v-5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="detail-modal__arrow detail-modal__arrow--prev" id="detailPrev" aria-label="Previous image">&lsaquo;</button>
+        <button class="detail-modal__arrow detail-modal__arrow--next" id="detailNext" aria-label="Next image">&rsaquo;</button>
+        <div class="detail-modal__dots" id="detailDots"></div>
+      </div>
+
+      <div class="detail-modal__body">
+        <p class="eyebrow" style="color: var(--steel); margin-bottom: 4px;" id="detailBuilding"></p>
+        <h2 class="detail-modal__title" id="detailTitle"></h2>
+
+        <div class="detail-modal__meta">
+          <span class="detail-modal__meta-item" id="detailSize"></span>
+          <span class="detail-modal__meta-item" id="detailType"></span>
+        </div>
+
+        <p class="detail-modal__desc" id="detailDesc"></p>
+
+        <div class="detail-modal__features" id="detailFeatures"></div>
+
+        <div class="detail-modal__actions">
+          <button class="btn btn--steel js-open-modal" id="detailBookBtn">Book a viewing &rarr;</button>
+          <a href="#contact" class="btn btn--ghost" id="detailContactBtn">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       BOOKING MODAL
+       Triggered by every "Book a viewing" CTA
+       ============================================================ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal">
+      <button class="modal__close" id="modalClose" aria-label="Close modal">&times;</button>
+
+      <p class="eyebrow" style="color: rgba(156,213,255,0.55); margin-bottom: 6px;">Book a viewing</p>
+      <h2 class="modal__title" id="modalTitle">Mustad Business Park</h2>
+      <p class="modal__subtitle" id="modalSubtitle"></p>
+
+      <form class="modal__form" id="modalForm" novalidate>
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label" for="m-name">Name &amp; company</label>
+            <input class="form__input form__input--dark" type="text" id="m-name" name="name" placeholder="Your name and company" required autocomplete="name" />
+          </div>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="m-contact">Phone or email</label>
+          <input class="form__input form__input--dark" type="text" id="m-contact" name="contact" placeholder="+47 … or you@company.com" required />
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label" for="m-date">Preferred viewing date</label>
+            <input class="form__input form__input--dark" type="date" id="m-date" name="date" />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="m-time">Preferred time</label>
+            <select class="form__input form__input--dark form__select" id="m-time" name="time">
+              <option value="">Any time</option>
+              <option value="morning">Morning (08:00–12:00)</option>
+              <option value="afternoon">Afternoon (12:00–16:00)</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn--steel modal__submit" type="submit">Request viewing</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       TOAST NOTIFICATION
+       ============================================================ -->
+  <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true" hidden>
+    <svg class="toast__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+      <circle cx="9" cy="9" r="8" fill="rgba(156,213,255,0.15)" stroke="#9CD5FF" stroke-width="1.5"/>
+      <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="#9CD5FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="toast__text">Request sent — we'll be in touch within 4 hours.</span>
+  </div>
+
+
+  <!-- Floor plan modal (ghost CTA) -->
+  <div class="modal-overlay" id="floorplanOverlay" role="dialog" aria-modal="true" aria-labelledby="fpTitle" hidden>
+    <div class="modal" style="max-width: 480px;">
+      <button class="modal__close" id="floorplanClose" aria-label="Close">&times;</button>
+      <p class="eyebrow" style="color: rgba(156,213,255,0.55); margin-bottom: 6px;">Floor plan overview</p>
+      <h2 class="modal__title" id="fpTitle">Download floor plans</h2>
+      <p style="color: rgba(255,255,255,0.55); font-size: 14px; margin: 12px 0 24px;">Enter your email and we'll send the full floor plan pack directly to your inbox.</p>
+      <form id="floorplanForm" novalidate>
+        <div class="form__group">
+          <label class="form__label" for="fp-email">Email address</label>
+          <input class="form__input form__input--dark" type="email" id="fp-email" name="email" placeholder="you@company.com" required />
+        </div>
+        <button class="btn btn--steel modal__submit" type="submit" style="margin-top: 8px;">Send floor plans</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- FULLSCREEN IMAGE VIEWER -->
+  <div class="fullscreen-viewer" id="fullscreenViewer">
+    <button class="fullscreen-viewer__close" id="fullscreenClose" aria-label="Close">&times;</button>
+    <button class="fullscreen-viewer__arrow fullscreen-viewer__arrow--prev" id="fullscreenPrev" aria-label="Previous">&lsaquo;</button>
+    <button class="fullscreen-viewer__arrow fullscreen-viewer__arrow--next" id="fullscreenNext" aria-label="Next">&rsaquo;</button>
+    <img src="" alt="" class="fullscreen-viewer__img" id="fullscreenImg" />
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
